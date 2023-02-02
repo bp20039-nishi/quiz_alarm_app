@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/alarmName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="アラームの名称"
+        android:inputType="text"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_margin="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"/>
+
+    <Button
+        android:id="@+id/pickbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showTimePickerDialog"
+        android:layout_margin="30dp"
+        android:text="@string/pick_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"/>
+
+
+
+
+
+
+    <CheckBox
+        android:id="@+id/Monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintRight_toLeftOf="@+id/Tuesday"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/Tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="火"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintRight_toLeftOf="@+id/Wednesday"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/Wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintRight_toLeftOf="@+id/Thursday"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/Thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="木"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/Friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintLeft_toRightOf="@+id/Thursday"/>
+
+    <CheckBox
+        android:id="@+id/Saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="土"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintLeft_toRightOf="@+id/Friday" />
+
+    <CheckBox
+        android:id="@+id/Sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        app:layout_constraintTop_toBottomOf="@+id/pickbtn"
+        app:layout_constraintLeft_toRightOf="@+id/Saturday"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/btnOK"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="アラーム作成"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday"
+        app:layout_constraintLeft_toLeftOf="@+id/btnBack"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
