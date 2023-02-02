@@ -21,7 +21,7 @@
        android:id="@+id/reloadbtn"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:text="reload"
+       android:text="test"
        app:layout_constraintTop_toTopOf="@id/addbtn"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintLeft_toLeftOf="parent"
